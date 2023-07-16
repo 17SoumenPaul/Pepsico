@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Augur Dashboard</title>
+</head>
+<body>
+<h1>Augur Dashboard</h1>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Quantity Shipped Last Month</th>
+<th>Forecasted Quantity to Ship This Month</th>
+<th>Year-to-Date Average</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PepsiCo</td>
+<td>100,000</td>
+<td>120,000</td>
+<td>100,000</td>
+</tr>
+<tr>
+<td>Coca-Cola</td>
+<td>80,000</td>
+<td>90,000</td>
+<td>80,000</td>
+</tr>
+<tr>
+<td>Dr. Pepper</td>
+<td>60,000</td>
+<td>70,000</td>
+<td>60,000</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
