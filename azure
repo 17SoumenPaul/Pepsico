@@ -1,0 +1,25 @@
+name: Augur Frontend
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: yarn install
+      - name: Build frontend
+        run: yarn build
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Deploy frontend to Azure
+        run: |
+          az login
+          az appservice deployment create --resource-group augur-rg --name augur-frontend --slot production --source-path dist
